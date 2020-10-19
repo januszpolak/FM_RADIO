@@ -53,5 +53,10 @@ namespace Radio_Internetowe
                 axWindowsMediaPlayer1.URL = url;
             }
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            axWindowsMediaPlayer1.close();
+        }
     }
 }
