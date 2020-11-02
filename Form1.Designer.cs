@@ -36,6 +36,8 @@
             this.buttonMansfield = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
+            this.buttonSmooth = new System.Windows.Forms.Button();
+            this.buttonCapital = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.axWindowsMediaPlayer1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -62,7 +64,7 @@
             // 
             // buttonMaxx
             // 
-            this.buttonMaxx.Location = new System.Drawing.Point(385, 220);
+            this.buttonMaxx.Location = new System.Drawing.Point(451, 191);
             this.buttonMaxx.Name = "buttonMaxx";
             this.buttonMaxx.Size = new System.Drawing.Size(63, 23);
             this.buttonMaxx.TabIndex = 7;
@@ -72,7 +74,7 @@
             // 
             // buttonKrakow
             // 
-            this.buttonKrakow.Location = new System.Drawing.Point(385, 249);
+            this.buttonKrakow.Location = new System.Drawing.Point(385, 220);
             this.buttonKrakow.Name = "buttonKrakow";
             this.buttonKrakow.Size = new System.Drawing.Size(63, 23);
             this.buttonKrakow.TabIndex = 8;
@@ -82,7 +84,7 @@
             // 
             // buttonMansfield
             // 
-            this.buttonMansfield.Location = new System.Drawing.Point(385, 278);
+            this.buttonMansfield.Location = new System.Drawing.Point(451, 220);
             this.buttonMansfield.Name = "buttonMansfield";
             this.buttonMansfield.Size = new System.Drawing.Size(63, 23);
             this.buttonMansfield.TabIndex = 9;
@@ -94,7 +96,7 @@
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(474, 262);
+            this.pictureBox1.Location = new System.Drawing.Point(474, 278);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(40, 39);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
@@ -114,6 +116,26 @@
             this.textBox1.TabIndex = 11;
             this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
+            // buttonSmooth
+            // 
+            this.buttonSmooth.Location = new System.Drawing.Point(385, 249);
+            this.buttonSmooth.Name = "buttonSmooth";
+            this.buttonSmooth.Size = new System.Drawing.Size(63, 23);
+            this.buttonSmooth.TabIndex = 12;
+            this.buttonSmooth.Text = "Smooth";
+            this.buttonSmooth.UseVisualStyleBackColor = true;
+            this.buttonSmooth.Click += new System.EventHandler(this.buttonSmooth_Click);
+            // 
+            // buttonCapital
+            // 
+            this.buttonCapital.Location = new System.Drawing.Point(451, 249);
+            this.buttonCapital.Name = "buttonCapital";
+            this.buttonCapital.Size = new System.Drawing.Size(63, 23);
+            this.buttonCapital.TabIndex = 13;
+            this.buttonCapital.Text = "CapitalFM";
+            this.buttonCapital.UseVisualStyleBackColor = true;
+            this.buttonCapital.Click += new System.EventHandler(this.buttonCapital_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -121,6 +143,8 @@
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(567, 387);
+            this.Controls.Add(this.buttonCapital);
+            this.Controls.Add(this.buttonSmooth);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.buttonMansfield);
@@ -150,6 +174,8 @@
         private System.Windows.Forms.Button buttonMansfield;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Button buttonSmooth;
+        private System.Windows.Forms.Button buttonCapital;
     }
 }
 

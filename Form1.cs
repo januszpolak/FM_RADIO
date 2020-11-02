@@ -21,10 +21,14 @@ namespace Radio_Internetowe
 
         private void Form1_Load(object sender, EventArgs e)
         {
-           
+            textBox1.Text = "Wybierz stację";
         }
 
-       
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            axWindowsMediaPlayer1.close();
+            textBox1.Text = "Wybierz stację";
+        }
 
         private void buttonRmf_Click(object sender, EventArgs e)
         {
@@ -59,11 +63,20 @@ namespace Radio_Internetowe
             textBox1.Text = "RADIO MANSFIELD 103.2 Mhz";
         }
 
-        private void pictureBox1_Click(object sender, EventArgs e)
+       
+
+        private void buttonSmooth_Click(object sender, EventArgs e)
         {
-            axWindowsMediaPlayer1.close();
+            url = "http://media-ice.musicradio.com:80/SmoothEastMidsMP3";
+            axWindowsMediaPlayer1.URL = url;
+            textBox1.Text = "RADIO SMOOTH 106.6 Mhz";
         }
 
-    
+        private void buttonCapital_Click(object sender, EventArgs e)
+        {
+            url = "http://media-ice.musicradio.com:80/CapitalNottinghamshireMP3";
+            axWindowsMediaPlayer1.URL = url;
+            textBox1.Text = "CAPITAL FM 106.6 Mhz";
+        }
     }
 }
